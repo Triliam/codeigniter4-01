@@ -1,0 +1,76 @@
+# CodeIgniter 4 specific files
+# -----------------------------
+# Environmental variables (never commit sensitive data)
+.env
+.env.development
+.env.production
+.env.testing
+
+# Writable directory contents (logs, cache, sessions, uploads)
+# CodeIgniter 4 already includes a .gitignore inside 'writable/',
+# but ignoring the whole directory from the root .gitignore is also common.
+# If you want to keep the .gitignore inside 'writable/', you can remove this line.
+/writable/
+
+# CodeIgniter CLI executable
+spark
+
+# Composer dependencies
+# ---------------------
+/vendor/
+
+# Keep composer.lock for consistent dependency versions across environments.
+# If you prefer to always get the latest compatible versions, you can uncomment this.
+# composer.lock
+
+# IDE and OS generated files
+# --------------------------
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VS Code specific files
+.vscode/
+
+# PHPStorm / IntelliJ IDEA specific files
+.idea/
+*.iml
+
+# NetBeans specific files
+nbproject/
+
+# Eclipse specific files
+.settings/
+.buildpath
+.project
+
+# Temporary files and logs
+# ------------------------
+*.log
+*.sqlite
+*.sql.gz
+*.sql.zip
+*.bak
+*.tmp
+*.temp
+
+# Debug Bar files (if not part of writable/)
+# Often lives in writable/debugbar/, but including it explicitly is safer.
+/debugbar/
+
+# Test output and coverage reports
+# --------------------------------
+/tests/_output/
+/build/
+/coverage/
+
+# User Guide source build (if you're maintaining the documentation source)
+user_guide_src/build/
+
+# Other temporary or local files
+# ------------------------------
+# If you have a temporary index.html or other static files in public that are not part of the app
+# and should not be versioned, you can ignore them here.
+# /public/index.html
