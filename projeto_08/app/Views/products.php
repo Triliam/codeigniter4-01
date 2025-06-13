@@ -1,38 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CBurguer</title>
-     <link rel="shortcut icons" href="<?= base_url('assets/images/logo.png') ?>" type="image/png">
-    <link rel="stylesheet" href="<?= base_url('assets/bootstrap/bootstrap.min.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/app.css') ?>">
-    
-</head>
-<body>
+ <!-- main products -->
 
+<?= $this->extend('layouts/main_layout') ?>
 
-<!-- nav -->
- <nav class="container-fluid">
-    <div class="row align-itens-center">
-        <div class="col p-3">
-            <!-- logo -->
-
-            <a href="<?= site_url('/') ?>"> <img src="<?= base_url('assets/images/logo.png') ?>" alt="CBurguer Logo"></a>
-            
-        </div>
-        <div class="col p-3 pe-5 d-flex flex-row justify-content-end">
-            <div> <a class="nav-link ms-5" href="<?= site_url('/') ?>">Inicio</a>
-            </div>
-            <div> <a class="nav-link ms-5" href="<?= site_url('products') ?>">Produtos</a>
-            </div>
-            <div> <a class="nav-link ms-5" href="<?= site_url('where_are_we') ?>">Onde Estamos</a>
-            </div>
-        </div>
-    </div>
- </nav>
-
- <!-- main -->
+<?= $this->section('content') ?>
   <section class="container">
     <!-- burger 01 -->
     <div class="row mb-5 product-box">
@@ -81,37 +51,4 @@
         </div>
      </div>
   </section>
-
- <!-- footer social networks -->
-
- <footer class="container-fluid mt-5">
-    <div class="row justify-content-center">
-        <div class="col-6 d-flex flex-row justify-content-center">
-            <div class="text-center mx-4">
-                <a href="#">
-                    <img src="<?= base_url('assets/images/facebook.png') ?>" alt="Facebook">
-                </a>
-            </div>
-            <div class="text-center mx-4">
-                <a href="#">
-                    <img src="<?= base_url('assets/images/instagram.png') ?>" alt="Instagram">
-                </a>
-            </div>
-            <div class="text-center mx-4">
-                <a href="#">
-                    <img src="<?= base_url('assets/images/whatsapp.png') ?>" alt="WhatsApp">
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mt-4">
-        <div class="col text-center">
-            <h6>Todos os direitos reservados &copy; <?= date('Y') ?></h6>
-        </div>
-    </div>
- </footer>
-
-    <script src="<?= base_url('assets/bootstrap/bootstrap.bundle.min.js') ?>"></script>
-</body>
-</html>
+<?= $this->endSection() ?>
